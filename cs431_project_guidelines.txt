@@ -1,0 +1,56 @@
+CS431 Operating Systems
+
+Project
+
+(100 points)
+
+Due Date: 7/19
+
+
+The purpose of this project is to write a java program that simulates the CPU Scheduler (also known as Short-Term Scheduler) of an operating system. 
+
+The program implements the following CPU scheduling algorithms. 
+
+1.	First-Come-First-Serve (FCFS)
+2.	Shortest-Job-First (SJF)
+3.	Round-Robin with time slice = 2 (RR-2)
+4.	Round-Robin with time slice = 5 (RR-5)
+
+The program will read process burst times from a file (job.txt) - this file will be provided by the instructor. 
+
+A sample input file of four jobs is given as follows (burst time in ms).:
+[Begin of job.txt]
+Job1
+5
+Job2
+3
+Job3
+8
+Job4
+6
+[End of job.txt]
+
+Note: You can assume that
+(1)	 there are no more than 30 jobs in the input file (job.txt).
+(2)	 processes arrive in the order they are read from the file for FCFS, RR-2 and RR-5.
+(3)	 all jobs arrive at time 0 for SJF.
+
+
+Compare the average completion times of all jobs for each scheduling algorithm. 
+Output the details of each algorithm's execution. You need to show which jobs are selected at what 
+times as well as their starting and stopping burst values. You can choose your display format, 
+but it is recommended that you display the results in terms of a Gantt chart.
+
+
+Turn in:
+
+(1) Soft copy of the program (using Blackboard)
+(2) A printout of the program file with proper documentation and the test runs using the given input files 
+    from the instructor.
+   (You can download test cases from the class web)
+(3) A report (at least two pages) of this programming assignment including:
+- software and hardware tools you used
+- strength and weakness of your program
+- do you prefer to read Gantt chart as an output of a processor schedule? or you like the other methods such as tables? explain why.
+- if you need to simulate the whole operating system (instead of just the CPU Scheduler here), explain how you can modify your program to do that. 
+
